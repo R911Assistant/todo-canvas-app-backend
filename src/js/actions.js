@@ -25,3 +25,15 @@ function goTo(place, context) {
         place: place
     }, context);
 }
+
+function goToNext(context) {
+    addAction({
+        type: "go_next",
+    }, context);
+}
+
+function goToBack(context) {
+    addAction({
+        type: "go_back",
+    }, context);
+}
