@@ -18,3 +18,10 @@ function deleteNote(id, context){
         id: id
     }, context);
 }
+
+function goTo(place, context) {
+    addAction({
+        type: "go_to",
+        place: place
+    }, context);
+}
