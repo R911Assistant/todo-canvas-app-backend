@@ -19,6 +19,15 @@ theme: /
             "Добавь запись помыть машину" 
 
            
+    state: ПереходимНаСтраницу
+        event!: done
+        event!: DONE
+
+        random: 
+            a: Перехожу
+            a: Открываю
+           
+           
     state: ДобавленаНоваяЗапись
         event!: note_added
         event!: NOTE_ADDED

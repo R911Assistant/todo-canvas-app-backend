@@ -7,4 +7,4 @@ theme: /
         script:
             goTo($parseTree._anyText, $context);
         
-        go!: /ДобавленаНоваяЗапись
+        go!: /ПереходимНаСтраницу
