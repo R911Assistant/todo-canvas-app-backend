@@ -35,7 +35,7 @@ theme: /
             a: Взлетаю
             a: Сравниваю
             
-    state: СравниваемМесяц
+    state: СравниваемКвартал
         event!: done
         event!: DONE
 
