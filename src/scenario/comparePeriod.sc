@@ -3,7 +3,7 @@ theme: /
     state: СравнениеКвартала
         q!: (~сравнить|~соотнести|сравни) 
             $AnyText::anyText
-            [квартал]
+            (квартал)
             
         script:
             compareQuarter($parseTree._anyText, $context);
