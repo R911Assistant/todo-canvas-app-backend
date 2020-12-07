@@ -44,3 +44,10 @@ function compareMonth(month, context) {
         month: month
     }, context);
 }
+
+function compareQuarter(quarter, context) {
+    addAction({
+        type: "compare_quarter",
+        quarter: quarter
+    }, context);
+}

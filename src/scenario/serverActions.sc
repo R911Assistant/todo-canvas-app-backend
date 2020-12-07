@@ -34,6 +34,14 @@ theme: /
         random: 
             a: Взлетаю
             a: Сравниваю
+            
+    state: СравниваемМесяц
+        event!: done
+        event!: DONE
+
+        random: 
+            a: Приступаю
+            a: Сравниваю
            
            
     state: ДобавленаНоваяЗапись
