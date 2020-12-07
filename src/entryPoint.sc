@@ -13,6 +13,8 @@ require: scenario/doNote.sc
 require: scenario/deleteNote.sc
 require: scenario/serverActions.sc
 require: scenario/goTo.sc
+require: scenario/compareMonth.sc
+
 
 
 patterns:
