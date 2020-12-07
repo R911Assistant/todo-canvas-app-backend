@@ -30,14 +30,13 @@ theme: /
     state: СравниваемМесяц
         event!: done
         event!: DONE
-
+        random:
             a: СравниваюМесяц
             
     state: СравниваемКвартал
         event!: done
         event!: DONE
-
-
+        random:
             a: СравниваюКвартал
            
            
