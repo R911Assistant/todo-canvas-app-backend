@@ -37,3 +37,10 @@ function goToBack(context) {
         type: "go_back",
     }, context);
 }
+
+function compareMonth(month, context) {
+    addAction({
+        type: "compare_month",
+        month: month
+    }, context);
+}
