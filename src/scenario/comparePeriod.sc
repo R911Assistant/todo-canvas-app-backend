@@ -18,3 +18,11 @@ theme: /
         go!: /СравниваемПоГодам
         
         
+    state: СравнениеПолугодия
+        q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (полугодие)}*
+        
+        script:
+            compareQuarter($parseTree._digit, $context);
+        
+        go!: /СравниваемПолугодие
+        
