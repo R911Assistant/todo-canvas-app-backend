@@ -51,3 +51,9 @@ function compareQuarter(quarter, context) {
         quarter: quarter
     }, context);
 }
+
+function compareYears(context) {
+    addAction({
+        type: "compare_years",
+    }, context);
+}

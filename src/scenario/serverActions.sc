@@ -38,6 +38,12 @@ theme: /
         event!: DONE
         random:
             a: Сравниваю квартал
+            
+    state: СравниваемПоГодам
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю по годам
            
            
     state: ДобавленаНоваяЗапись

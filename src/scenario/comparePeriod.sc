@@ -8,3 +8,11 @@ theme: /
             compareQuarter($parseTree._digit, $context);
         
         go!: /СравниваемКвартал
+        
+    state: СравнениеПоГодам
+        q!: *{(~сравнить|~соотнести|сравни) (по годам)}* 
+        
+        script:
+            compareYears($context);
+        
+        go!: /СравниваемПоГодам
