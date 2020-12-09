@@ -1,7 +1,7 @@
 theme: /
 
     state: СравнениеКвартала
-        q!: {(~сравнить|~соотнести|сравни) ($OneWord:: digit) (квартал)}
+        q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (квартал)}*
         
 
         script:
@@ -20,7 +20,7 @@ theme: /
         
         
     state: СравнениеПолугодия
-       q!:  q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (полугодие)}* 
+       q!:  *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (полугодие)}* 
         
         script:
             compareHalfYear($parseTree._digit, $context);
