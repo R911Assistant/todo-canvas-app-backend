@@ -22,7 +22,7 @@ theme: /
         q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (полугодие)}*
         
         script:
-            compareQuarter($parseTree._digit, $context);
+            compareHalfYear($parseTree._digit, $context);
         
         go!: /СравниваемПолугодие
         
