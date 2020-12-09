@@ -20,6 +20,8 @@ require: scenario/comparePeriod.sc
 
 patterns:
     $AnyText = $nonEmptyGarbage
+    $OneWord = $oneWord
+    
     
     # Паттерны для запуска сценария
     $OpenSkipWords = (хочу|мне|мое|моё|пожалуйста|в|прошу|тебя|может|с)
