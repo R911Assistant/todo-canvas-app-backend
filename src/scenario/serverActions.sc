@@ -45,6 +45,11 @@ theme: /
         random:
             a: Сравниваю по годам
            
+    state: СравниваемПолугодие
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю полугодие
            
     state: ДобавленаНоваяЗапись
         event!: note_added
