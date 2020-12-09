@@ -1,14 +1,6 @@
 theme: /
 
-    state: СравнениеКвартала
-        q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (квартал)}*
-        
-        script:
-            compareQuarter($parseTree._digit, $context);
-        
-        go!: /СравниваемКвартал
-        
-        
+    
     state: СравнениеПоГодам
         q!: *{(~сравнить|~соотнести|сравни) (по годам)}* 
         
@@ -16,6 +8,14 @@ theme: /
             compareYears($context);
         
         go!: /СравниваемПоГодам
+        
+    state: СравнениеТекущегоГода
+        q!: *{(~сравнить|~соотнести|сравни) (текущий год)}* 
+        
+        script:
+            compareYear($context);
+        
+        go!: /СравниваемТекущийГод
         
         
     state: СравнениеПолугодия
@@ -25,4 +25,14 @@ theme: /
             compareHalfYear($parseTree._digit, $context);
         
         go!: /СравниваемПолугодие
+        
+        
+    state: СравнениеКвартала
+        q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (квартал)}*
+        
+        script:
+            compareQuarter($parseTree._digit, $context);
+        
+        go!: /СравниваемКвартал
+        
         

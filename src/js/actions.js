@@ -38,10 +38,23 @@ function goToBack(context) {
     }, context);
 }
 
-function compareMonth(month, context) {
+function compareYears(context) {
     addAction({
-        type: "compare_month",
-        month: month
+        type: "compare_years",
+    }, context);
+}
+
+function compareYear(context) {
+    addAction({
+        type: "compare_year",
+    }, context);
+}
+
+
+function compareHalfYear(halfYear, context) {
+    addAction({
+        type: "compare_half_year",
+        halfYear: halfYear
     }, context);
 }
 
@@ -52,15 +65,9 @@ function compareQuarter(quarter, context) {
     }, context);
 }
 
-function compareYears(context) {
+function compareMonth(month, context) {
     addAction({
-        type: "compare_years",
-    }, context);
-}
-
-function compareHalfYear(halfYear, context) {
-    addAction({
-        type: "compare_half_year",
-        halfYear: halfYear
+        type: "compare_month",
+        month: month
     }, context);
 }

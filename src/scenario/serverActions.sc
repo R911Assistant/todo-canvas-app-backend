@@ -39,6 +39,12 @@ theme: /
         random:
             a: Сравниваю квартал
             
+    state: СравниваемТекущийГод
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю текущий год
+            
     state: СравниваемПоГодам
         event!: done
         event!: DONE
