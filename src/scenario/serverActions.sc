@@ -17,46 +17,7 @@ theme: /
         buttons:
             "Запиши купить молоко"
             "Добавь запись помыть машину" 
-
-           
-    state: ПереходимНаСтраницу
-        event!: done
-        event!: DONE
-
-        random: 
-            a: Перехожу
-            a: Открываю
             
-    state: СравниваемМесяц
-        event!: done
-        event!: DONE
-        random:
-            a: Сравниваю месяц
-            
-    state: СравниваемКвартал
-        event!: done
-        event!: DONE
-        random:
-            a: Сравниваю квартал
-            
-    state: СравниваемТекущийГод
-        event!: done
-        event!: DONE
-        random:
-            a: Сравниваю текущий год
-            
-    state: СравниваемПоГодам
-        event!: done
-        event!: DONE
-        random:
-            a: Сравниваю по годам
-           
-    state: СравниваемПолугодие
-        event!: done
-        event!: DONE
-        random:
-            a: Сравниваю полугодие
-           
     state: ДобавленаНоваяЗапись
         event!: note_added
         event!: NOTE_ADDED
@@ -69,3 +30,45 @@ theme: /
         buttons:
             "Запиши купить молоко"
             "Добавь запись помыть машину" 
+
+           
+    state: ПереходимНаСтраницу
+        event!: done
+        event!: DONE
+
+        random: 
+            a: Перехожу
+            a: Открываю
+            
+    
+    
+    state: СравниваемПоГодам
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю по годам
+            
+    state: СравниваемТекущийГод
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю текущий год
+            
+    state: СравниваемПолугодие
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю полугодие
+           
+    state: СравниваемКвартал
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю квартал
+            
+    state: СравниваемМесяц
+        event!: done
+        event!: DONE
+        random:
+            a: Сравниваю месяц
+            
