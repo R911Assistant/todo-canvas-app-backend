@@ -1,10 +1,11 @@
+    
 theme: /
 
     state: СравнениеМесяца
         q!: (~сравнить|~соотнести|сравни) 
-            @duckling.number:: digit
+            $AnyText::anyText
             
         script:
-            compareMonth($parseTree._digit, $context);
+            compareMonth($parseTree._anyText, $context);
         
         go!: /СравниваемМесяц
