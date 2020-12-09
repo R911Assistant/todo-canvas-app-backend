@@ -1,9 +1,9 @@
 theme: /
 
     state: СравнениеКвартала
-        q!: *{(~сравнить|~соотнести|сравни) ($AnyText::number) (квартал)}* 
+        q!: *{(~сравнить|~соотнести|сравни) ($AnyText::anyText) (квартал)}* 
 
         script:
-            compareQuarter($parseTree._number, $context);
+            compareQuarter($parseTree._anyText, $context);
         
         go!: /СравниваемКвартал
