@@ -5,6 +5,6 @@ theme: /
             @duckling.number:: digit
             
         script:
-            compareMonth($parseTree._anyText, $context);
+            compareMonth($parseTree._digit, $context);
         
         go!: /СравниваемМесяц

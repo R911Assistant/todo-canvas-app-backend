@@ -29,7 +29,3 @@ function getItems(request) {
     }
     return null;
 }
-
-function numberConverterDigit(parseTree) {
-    return parseInt(parseTree.text);
-}
