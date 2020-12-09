@@ -1,7 +1,7 @@
 theme: /
 
     state: СравнениеКвартала
-        q!: *{(~сравнить|~соотнести|сравни) (@duckling.number:: digit $weight<1.001>) (квартал)}* 
+        q!: *{(~сравнить|~соотнести|сравни) (@duckling.number:: digit) (квартал)}* 
         
 
         script:
