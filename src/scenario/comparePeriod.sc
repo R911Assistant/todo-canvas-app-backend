@@ -4,6 +4,6 @@ theme: /
         q!: *{(~сравнить|~соотнести|сравни) ($parseTree._Number) (квартал)}* 
 
         script:
-            compareQuarter($parseTree._anyText, $context);
+            compareQuarter($parseTree._Number, $context);
         
         go!: /СравниваемКвартал
