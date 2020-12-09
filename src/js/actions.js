@@ -50,7 +50,6 @@ function compareYear(context) {
     }, context);
 }
 
-
 function compareHalfYear(halfYear, context) {
     addAction({
         type: "compare_half_year",

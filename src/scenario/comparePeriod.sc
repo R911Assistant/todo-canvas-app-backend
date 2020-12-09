@@ -35,4 +35,13 @@ theme: /
         
         go!: /СравниваемКвартал
         
+    state: СравнениеМесяца
+        q!: (~сравнить|~соотнести|сравни) 
+            $OneWord::anyText
+            
+        script:
+            compareMonth($parseTree._anyText, $context);
+        
+        go!: /СравниваемМесяц
+        
         
