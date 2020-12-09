@@ -1,8 +1,8 @@
 theme: /
 
     state: СравнениеКвартала
-        q!: *{(~сравнить|~соотнести|сравни) (@duckling.number:: digit) (квартал)}* 
-        $weight<1.001>
+        q!: *{(~сравнить|~соотнести|сравни) (@duckling.number:: digit $weight<1.001>) (квартал)}* 
+        
 
         script:
             compareQuarter($parseTree._digit, $context);
