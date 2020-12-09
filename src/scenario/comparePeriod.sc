@@ -20,7 +20,7 @@ theme: /
         
         
     state: СравнениеПолугодия
-       q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (полугодие)}* 
+       q!:  q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (полугодие)}* 
         
         script:
             compareHalfYear($parseTree._digit, $context);
