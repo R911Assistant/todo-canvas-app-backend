@@ -2,10 +2,11 @@ theme: /
 
     state: ВыделениеСерии
         q!: (~выделить|выдели) 
-        $AnyText::anyText
+            $AnyText::anyText
             
         script:
             compareMonth($parseTree._anyText, $context);
         
         go!: /ВыделяемСерию
+        
         
