@@ -5,7 +5,7 @@ theme: /
             $AnyText::anyText
             
         script:
-            compareMonth($parseTree._anyText, $context);
+            selectSeries($parseTree._anyText, $context);
         
         go!: /ВыделяемСерию
         
