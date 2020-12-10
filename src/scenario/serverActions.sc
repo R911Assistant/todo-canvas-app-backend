@@ -80,3 +80,9 @@ theme: /
         event!: DONE
         random:
             a: Выделяю серию
+            
+    state: ВыделяемВсеСерии
+        event!: done
+        event!: DONE
+        random:
+            a: Выделяю все серии

@@ -78,3 +78,9 @@ function selectSeries(series, context) {
         series: series
     }, context);
 }
+
+function selectAllSeries(context) {
+    addAction({
+        type: "select_all_series",
+    }, context);
+}
