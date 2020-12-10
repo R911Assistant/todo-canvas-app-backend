@@ -72,3 +72,11 @@ theme: /
         random:
             a: Сравниваю месяц
             
+            
+            
+            
+    state: ВыделяемСерию
+        event!: done
+        event!: DONE
+        random:
+            a: Выделяю серию
