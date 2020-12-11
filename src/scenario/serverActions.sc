@@ -6,13 +6,16 @@
 theme: /
 
     state: Неудача
-        event!: some_action_name
-        event!: SOME_ACTION_NAME
+        event!: fail
+        event!: FAIL
 
         random: 
             a: Не вышло!
             a: Никак!
             a: Не могу выполнить
+            a: Не получается
+    
+    
     
     state: ЗаданиеВыполнено
         event!: done
