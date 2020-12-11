@@ -110,9 +110,3 @@ function cancel(context) {
         type: "cancel",
     }, context);
 }
-
-function someAction(context) {
-    addAction({
-        type: "some_action_name",
-    }, context);
-}
