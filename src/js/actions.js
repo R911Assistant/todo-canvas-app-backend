@@ -97,7 +97,7 @@ function showPrevIntegration(context) {
     }, context);
 }
 
-function moveToAnchor(series, context) {
+function moveToAnchor(anchor, context) {
     addAction({
         type: "move_to_anchor",
         anchor: anchor
