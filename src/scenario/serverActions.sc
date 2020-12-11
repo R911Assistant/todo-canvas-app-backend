@@ -4,6 +4,15 @@
 #     event!: action_id
 
 theme: /
+
+    state: ЗаданиеВыполнено
+        event!: some_action_name
+        event!: SOME_ACTION_NAME
+
+        random: 
+            a: Не вышло!
+            a: Никак!
+            a: Не могу выполнить
     
     state: ЗаданиеВыполнено
         event!: done
