@@ -86,3 +86,10 @@ theme: /
         event!: DONE
         random:
             a: Выделяю все серии
+            
+            
+    state: Отменяем
+        event!: done
+        event!: DONE
+        random:
+            a: Отменяю

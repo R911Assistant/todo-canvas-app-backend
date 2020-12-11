@@ -84,3 +84,9 @@ function selectAllSeries(context) {
         type: "select_all_series",
     }, context);
 }
+
+function cancel(context) {
+    addAction({
+        type: "cancel",
+    }, context);
+}

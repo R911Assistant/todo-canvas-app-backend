@@ -15,6 +15,7 @@ require: scenario/serverActions.sc
 require: scenario/goTo.sc
 require: scenario/comparePeriod.sc
 require: scenario/selectSeries.sc
+require: scenario/cancel.sc
 
 
 
