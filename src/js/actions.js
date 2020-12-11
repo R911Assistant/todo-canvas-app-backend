@@ -97,7 +97,12 @@ function showPrevIntegration(context) {
     }, context);
 }
 
-
+function moveToAnchor(series, context) {
+    addAction({
+        type: "move_to_anchor",
+        anchor: anchor
+    }, context);
+}
 
 
 function cancel(context) {

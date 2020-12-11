@@ -17,6 +17,7 @@ require: scenario/comparePeriod.sc
 require: scenario/selectSeries.sc
 require: scenario/cancel.sc
 require: scenario/toggleIntegrations.sc
+require: scenario/textReportNavigation.sc
 
 
 

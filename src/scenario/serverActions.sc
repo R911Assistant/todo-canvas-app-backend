@@ -104,7 +104,11 @@ theme: /
             a: Показываю предыдущее внедрение
             
             
-            
+    state: ПереходимКРазделу
+        event!: done
+        event!: DONE
+        random:
+            a: Перехожу к разделу
             
     state: Отменяем
         event!: done
