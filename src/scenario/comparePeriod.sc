@@ -24,7 +24,6 @@ theme: /
         script:
             compareHalfYear($parseTree._digit, $context);
         
-        go!: /СравниваемПолугодие
         
         
     state: СравнениеКвартала

@@ -85,8 +85,8 @@ theme: /
             a: Сравниваю текущий год
             
     state: СравниваемПолугодие
-        event!: done
-        event!: DONE
+        event!: compare_half_year
+        event!: COMPARE_HALF_YEAR
         random:
             a: Сравниваю полугодие
            
