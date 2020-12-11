@@ -85,6 +85,21 @@ function selectAllSeries(context) {
     }, context);
 }
 
+function showNextIntegration(context) {
+    addAction({
+        type: "show_next_integration",
+    }, context);
+}
+
+function showPrevIntegration(context) {
+    addAction({
+        type: "show_prev_integration",
+    }, context);
+}
+
+
+
+
 function cancel(context) {
     addAction({
         type: "cancel",

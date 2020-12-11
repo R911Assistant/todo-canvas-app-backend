@@ -88,6 +88,24 @@ theme: /
             a: Выделяю все серии
             
             
+            
+            
+    state: ПоказываемСледующееВнедрение
+        event!: done
+        event!: DONE
+        random:
+            a: Показываю следующее внедрение
+            
+            
+    state: ПоказываемПредыдущееВнедрение
+        event!: done
+        event!: DONE
+        random:
+            a: Показываю предыдущее внедрение
+            
+            
+            
+            
     state: Отменяем
         event!: done
         event!: DONE
