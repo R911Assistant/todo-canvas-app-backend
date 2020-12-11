@@ -5,7 +5,7 @@
 
 theme: /
 
-    state: ЗаданиеВыполнено
+    state: Неудача
         event!: some_action_name
         event!: SOME_ACTION_NAME
 
