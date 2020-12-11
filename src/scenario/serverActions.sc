@@ -45,8 +45,8 @@ theme: /
 
            
     state: ПереходимНаСтраницу
-        event!: done
-        event!: DONE
+        event!: go_to_place
+        event!: GO_TO_PLACE
 
         random: 
             a: Перехожу

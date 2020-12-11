@@ -7,7 +7,6 @@ theme: /
         script:
             goTo($parseTree._anyText, $context);
         
-        go!: /ПереходимНаСтраницу
         
     state: ПереходДальше
         q!: (~дальше|~следующий|вперёд) 
