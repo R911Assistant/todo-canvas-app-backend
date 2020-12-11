@@ -5,6 +5,6 @@ theme: /
             $AnyText::anyText
             
         script:
-            ($parseTree._anyText, $context);
+            moveToAnchor($parseTree._anyText, $context);
         
         go!: /ПереходимКРазделу
