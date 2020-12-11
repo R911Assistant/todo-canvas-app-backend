@@ -14,6 +14,7 @@ theme: /
             a: Никак!
             a: Не могу выполнить
             a: Не получается
+            a: Решенье ваше сумасбродно, позвольте игнорировать его
     
     
     
@@ -45,13 +46,29 @@ theme: /
 
            
     state: ПереходимНаСтраницу
-        event!: go_to_place
-        event!: GO_TO_PLACE
+        event!: go_to
+        event!: GO_TO
 
         random: 
             a: Перехожу
             a: Открываю
             
+            
+    state: ПереходимНаСледующуюСтраницу
+        event!: go_next
+        event!: GO_NEXT
+
+        random: 
+            a: Перехожу
+            a: Открываю
+            
+    state: ПереходимНаПредыдущуюСтраницу
+        event!: go_prev
+        event!: GO_PREV
+
+        random: 
+            a: Перехожу
+            a: Открываю
     
     
     state: СравниваемПоГодам
