@@ -14,33 +14,6 @@ theme: /
             a: Никак!
             a: Не могу выполнить
             a: Не получается
-    
-    
-    state: ЗаданиеВыполнено
-        event!: done
-        event!: DONE
-
-        random: 
-            a: Молодец!
-            a: Красавичк!
-            a: Супер
-
-        buttons:
-            "Запиши купить молоко"
-            "Добавь запись помыть машину" 
-            
-    state: ДобавленаНоваяЗапись
-        event!: note_added
-        event!: NOTE_ADDED
-
-        random: 
-            a: Добавлено!
-            a: Сохранено!
-            a: Записано!
-        
-        buttons:
-            "Запиши купить молоко"
-            "Добавь запись помыть машину" 
 
            
     state: ПереходимНаСтраницу
@@ -49,16 +22,14 @@ theme: /
 
         random: 
             a: Перехожу
-            a: Открываю
-            
+           
             
     state: ПереходимНаСледующуюСтраницу
         event!: go_next
         event!: GO_NEXT
 
         random: 
-            a: Перехожу
-            a: Открываю
+            a: Перехожу 
             
     state: ПереходимНаПредыдущуюСтраницу
         event!: go_prev
@@ -66,18 +37,24 @@ theme: /
 
         random: 
             a: Перехожу
-            a: Открываю
+            
+    state: ПереходимКРазделу
+        event!: go_to_anchor
+        event!: GO_TO_ANCHOR
+        random:
+            a: Перехожу к разделу
+    
     
     
     state: СравниваемПоГодам
-        event!: done
-        event!: DONE
+        event!: compare_years
+        event!: COMPARE_YEARS
         random:
             a: Сравниваю по годам
             
     state: СравниваемТекущийГод
-        event!: done
-        event!: DONE
+        event!: compare_year
+        event!: COMPARE_YEAR
         random:
             a: Сравниваю текущий год
             
@@ -88,29 +65,37 @@ theme: /
             a: Сравниваю полугодие
            
     state: СравниваемКвартал
-        event!: done
-        event!: DONE
+        event!: compare_quarter
+        event!: COMPARE_QUARTER
         random:
             a: Сравниваю квартал
             
     state: СравниваемМесяц
-        event!: done
-        event!: DONE
+        event!: compare_month
+        event!: COMPARE_MONTH
         random:
             a: Сравниваю месяц
+            
+            
+                       
+    state: МасштабируемГод
+        event!: zoom_year
+        event!: ZOOM_YEAR
+        random:
+            a: Масштабирую год
             
             
             
             
     state: ВыделяемСерию
-        event!: done
-        event!: DONE
+        event!: select_series
+        event!: SELECT_SERIES
         random:
             a: Выделяю серию
             
     state: ВыделяемВсеСерии
-        event!: done
-        event!: DONE
+        event!: select_all_series
+        event!: SELECT_ALL_SERIES
         random:
             a: Выделяю все серии
             
@@ -118,27 +103,22 @@ theme: /
             
             
     state: ПоказываемСледующееВнедрение
-        event!: done
-        event!: DONE
+        event!: show_next_integration
+        event!: SHOW_PREV_INTEGRATION
         random:
             a: Показываю следующее внедрение
             
             
     state: ПоказываемПредыдущееВнедрение
-        event!: done
-        event!: DONE
+        event!: show_prev_integration
+        event!: SHOW_PREV_INTEGRATION
         random:
             a: Показываю предыдущее внедрение
             
             
-    state: ПереходимКРазделу
-        event!: done
-        event!: DONE
-        random:
-            a: Перехожу к разделу
             
     state: Отменяем
-        event!: done
-        event!: DONE
+        event!: cancel
+        event!: CANCEL
         random:
             a: Отменяю

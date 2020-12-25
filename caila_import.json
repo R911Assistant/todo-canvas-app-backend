@@ -1,17 +1,85 @@
 {
   "project" : {
-    "id" : "sberbank-38571-Frc",
-    "name" : "sberbank-38571-Frc",
+    "id" : "incident_report-906-TuB",
+    "name" : "incident_report-906-TuB",
     "folder" : "/jaicp"
   },
   "settings" : {
     "language" : "ru",
     "spellingCorrection" : false,
-    "classificationAlgorithm" : "sts",
-    "timezone" : "UTC",
+    "classificationAlgorithm" : "regression",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem"
+    },
     "shared" : false
   },
-  "intents" : [ ],
+  "intents" : [ {
+    "id" : 39244,
+    "path" : "/ПереходНаСтраницу",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "перей* на страницу"
+    }, {
+      "text" : "вот бы сейчас открыть страницу"
+    }, {
+      "text" : "може* открыть страницу"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 39810,
+    "path" : "/СравнениеКвартала",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "(~сравни @duckling.date квартал)"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ ]
+  }, {
+    "id" : 40001,
+    "path" : "/ТестированиеГода",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "тестируй @duckling.date год"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 39813,
+    "path" : "/СравнениеМесяца",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "(~сравни @duckling.date месяц)"
+    }, {
+      "text" : "(~сравни @duckling.date)"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ ]
+  }, {
+    "id" : 40002,
+    "path" : "/СравнениеПолугодия",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "~сравни @duckling.ordinal полугодие"
+    }, {
+      "text" : "сравнение @duckling.ordinal полугодия"
+    }, {
+      "text" : "соотнести @duckling.ordinal полугодие"
+    }, {
+      "text" : "~сравни полугодие @duckling.number"
+    }, {
+      "text" : "~сравни @duckling.ordinal половину года"
+    }, {
+      "text" : "соотнеси @duckling.ordinal половину года"
+    }, {
+      "text" : "сделай сравнение полугодия @duckling.number"
+    } ],
+    "patterns" : [ ]
+  } ],
   "entities" : [ ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.ordinal" ]
+  "enabledSystemEntities" : [ "duckling.number", "duckling.ordinal", "duckling.date" ]
 }

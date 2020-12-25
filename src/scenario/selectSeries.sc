@@ -7,7 +7,6 @@ theme: /
         script:
             selectSeries($parseTree._anyText, $context);
         
-        go!: /ВыделяемСерию
         
     state: ВыделениеВсехСерий
         q!: (~выделить|выдели) (все серии)

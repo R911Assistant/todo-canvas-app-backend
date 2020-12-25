@@ -16,7 +16,6 @@ theme: /
             
         go!: /ПереходимНаСледующуюСтраницу
         
-
         
     state: ПереходНазад
         q!: (~назад|~предыдущий|вернись) 
@@ -25,3 +24,11 @@ theme: /
             goToBack($context);
         
         go!: /ПереходимНаПредыдущуюСтраницу
+        
+    state: ПереходКРазделу
+        q!: (перейди к разделу) 
+            $AnyText::anyText
+            
+        script:
+            goToAnchor($parseTree._anyText, $context);
+        

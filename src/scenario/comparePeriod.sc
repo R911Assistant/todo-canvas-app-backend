@@ -19,28 +19,41 @@ theme: /
         
         
     state: СравнениеПолугодия
-        q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (полугодие)}*
-        
-        script:
-            compareHalfYear($parseTree._digit, $context);
-        
+        intent!: /СравнениеПолугодия
+        script: 
+            var $HalfYear = $parseTree.value;
+            compareHalfYear($HalfYear, $context);
         
         
     state: СравнениеКвартала
-        q!: *{(~сравнить|~соотнести|сравни) ($OneWord:: digit) (квартал)}*
+        intent!: /СравнениеКвартала
+        script: 
+            var $Quarter;
+            if (typeof $parseTree.value === "object") {
+                $Quarter = $parseTree.value.month - 1;
+            } else {
+                var $QuarterDictionary = {
+                    "1": 0,
+                    "2": 3,
+                    "3": 6,
+                    "4": 9
+                  };
+                $Quarter = $QuarterDictionary[$parseTree.value];
+            }
+            compareQuarter($Quarter, $context);
+
         
-        script:
-            compareQuarter($parseTree._digit, $context);
-        
-        go!: /СравниваемКвартал
         
     state: СравнениеМесяца
-        q!: (~сравнить|~соотнести|сравни) 
-            $OneWord::anyText
-            
-        script:
-            compareMonth($parseTree._anyText, $context);
-        
-        go!: /СравниваемМесяц
+        intent!: /СравнениеМесяца
+        script: 
+            var $Month;
+            if (typeof $parseTree.value === "object") {
+                $Month = $parseTree.value.month - 1;
+            } else {
+                $Month = $parseTree.value - 1;
+            }
+            compareMonth($Month, $context);
+
         
         

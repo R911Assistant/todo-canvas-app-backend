@@ -1,23 +1,11 @@
-function addNote(note, context) {
+function testYear(date, context) {
     addAction({
-        type: "add_note",
-        note: note
+        type: "test_year",
+        date: date
     }, context);
 }
 
-function doneNote(id, context){
-    addAction({
-        type: "done_note",
-        id: id
-    }, context);
-}
 
-function deleteNote(id, context){
-    addAction({
-        type: "delete_note",
-        id: id
-    }, context);
-}
 
 function goTo(place, context) {
     addAction({
@@ -37,6 +25,17 @@ function goToBack(context) {
         type: "go_back",
     }, context);
 }
+
+function goToAnchor(anchor, context) {
+    addAction({
+        type: "go_to_anchor",
+        anchor: anchor
+    }, context);
+}
+
+
+
+
 
 function compareYears(context) {
     addAction({
@@ -72,6 +71,19 @@ function compareMonth(month, context) {
 }
 
 
+
+
+function zoomYear(year, context) {
+    addAction({
+        type: "zoom_year",
+        year: year
+    }, context);
+}
+
+
+
+
+
 function selectSeries(series, context) {
     addAction({
         type: "select_series",
@@ -85,6 +97,10 @@ function selectAllSeries(context) {
     }, context);
 }
 
+
+
+
+
 function showNextIntegration(context) {
     addAction({
         type: "show_next_integration",
@@ -97,12 +113,8 @@ function showPrevIntegration(context) {
     }, context);
 }
 
-function moveToAnchor(anchor, context) {
-    addAction({
-        type: "move_to_anchor",
-        anchor: anchor
-    }, context);
-}
+
+
 
 
 function cancel(context) {
