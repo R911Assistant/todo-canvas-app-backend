@@ -23,6 +23,7 @@ theme: /
         script: 
             var $HalfYear = $parseTree.value;
             compareHalfYear($HalfYear, $context);
+        a: Ок, может позже
         
         
     state: СравнениеКвартала
