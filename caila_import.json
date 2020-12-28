@@ -30,43 +30,82 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "(~сравни @duckling.date квартал)"
+      "text" : "сравни квартал"
+    }, {
+      "text" : "сделай сравнение квартала номер"
+    }, {
+      "text" : "покажи разницу между кварталами"
     } ],
     "patterns" : [ ],
-    "slots" : [ ]
+    "slots" : [ {
+      "name" : "duckling.date",
+      "entity" : "duckling.date",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.number",
+      "entity" : "duckling.number",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.ordinal",
+      "entity" : "duckling.ordinal",
+      "required" : false,
+      "prompts" : [ ]
+    } ]
   }, {
     "id" : 80585,
     "path" : "/СравнениеМесяца",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "(~сравни @duckling.date месяц)"
+      "text" : "сравни месяц"
     }, {
-      "text" : "(~сравни @duckling.date)"
+      "text" : "сравни"
+    }, {
+      "text" : "сделай сравнение месяца"
     } ],
     "patterns" : [ ],
-    "slots" : [ ]
+    "slots" : [ {
+      "name" : "duckling.date",
+      "entity" : "duckling.date",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.number",
+      "entity" : "duckling.number",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.ordinal",
+      "entity" : "duckling.ordinal",
+      "required" : false,
+      "prompts" : [ ]
+    } ]
   }, {
     "id" : 80586,
     "path" : "/СравнениеПолугодия",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "~сравни @duckling.ordinal полугодие"
+      "text" : "сравни полугодие"
     }, {
-      "text" : "сравнение @duckling.ordinal полугодия"
+      "text" : "сравни половину года"
     }, {
-      "text" : "соотнести @duckling.ordinal полугодие"
-    }, {
-      "text" : "~сравни полугодие @duckling.number"
-    }, {
-      "text" : "~сравни @duckling.ordinal половину года"
-    }, {
-      "text" : "соотнеси @duckling.ordinal половину года"
-    }, {
-      "text" : "сделай сравнение полугодия @duckling.number"
+      "text" : "сделай сравнение полугодия"
     } ],
-    "patterns" : [ ]
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "duckling.number",
+      "entity" : "duckling.number",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.ordinal",
+      "entity" : "duckling.ordinal",
+      "required" : false,
+      "prompts" : [ ]
+    } ]
   }, {
     "id" : 80584,
     "path" : "/ТестированиеГода",
