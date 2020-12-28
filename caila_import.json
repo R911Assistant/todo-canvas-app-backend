@@ -1,21 +1,18 @@
 {
   "project" : {
-    "id" : "incident_report-906-TuB",
-    "name" : "incident_report-906-TuB",
+    "id" : "incident_report-38571-qGZ",
+    "name" : "incident_report-38571-qGZ",
     "folder" : "/jaicp"
   },
   "settings" : {
     "language" : "ru",
     "spellingCorrection" : false,
-    "classificationAlgorithm" : "regression",
-    "timezone" : "Europe/Moscow",
-    "extendedSettings" : {
-      "tokenizerEngine" : "mystem"
-    },
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
     "shared" : false
   },
   "intents" : [ {
-    "id" : 39244,
+    "id" : 80582,
     "path" : "/ПереходНаСтраницу",
     "enabled" : true,
     "shared" : false,
@@ -28,7 +25,7 @@
     } ],
     "patterns" : [ ]
   }, {
-    "id" : 39810,
+    "id" : 80583,
     "path" : "/СравнениеКвартала",
     "enabled" : true,
     "shared" : false,
@@ -38,16 +35,7 @@
     "patterns" : [ ],
     "slots" : [ ]
   }, {
-    "id" : 40001,
-    "path" : "/ТестированиеГода",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "тестируй @duckling.date год"
-    } ],
-    "patterns" : [ ]
-  }, {
-    "id" : 39813,
+    "id" : 80585,
     "path" : "/СравнениеМесяца",
     "enabled" : true,
     "shared" : false,
@@ -59,7 +47,7 @@
     "patterns" : [ ],
     "slots" : [ ]
   }, {
-    "id" : 40002,
+    "id" : 80586,
     "path" : "/СравнениеПолугодия",
     "enabled" : true,
     "shared" : false,
@@ -77,6 +65,15 @@
       "text" : "соотнеси @duckling.ordinal половину года"
     }, {
       "text" : "сделай сравнение полугодия @duckling.number"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 80584,
+    "path" : "/ТестированиеГода",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "тестируй @duckling.date год"
     } ],
     "patterns" : [ ]
   } ],
