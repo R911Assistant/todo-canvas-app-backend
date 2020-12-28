@@ -7,8 +7,7 @@ require: js/reply.js
 require: js/actions.js
 
 
-
-  # Подключение сценарных файлов
+# Подключение сценарных файлов
 require: scenario/serverActions.sc
 require: scenario/goTo.sc
 require: scenario/comparePeriod.sc
@@ -35,18 +34,18 @@ patterns:
 
 theme: /
     state: Запуск
-  # При запуске приложения с кнопки прилетит сообщение /start.
-    q!: $regex</start>
+    # При запуске приложения с кнопки прилетит сообщение /start.
+        q!: $regex</start>
 
-# При запуске приложения с голоса прилетит сказанная фраза.
-    q!: [$repeat<$OpenSkipWords>]
+    # При запуске приложения с голоса прилетит сказанная фраза.
+        q!: [$repeat<$OpenSkipWords>]
         $repeat<$OpenKeyWords>
         [$repeat<$OpenSkipWords>]
         $projectName
 
-    a: Начнём!
+        a: Начнём!
 
 
-  state: Fallback
-    event!: noMatch
-    a: Я не понимаю!
+    state: Fallback
+        event!: noMatch
+        a: Я не понимаю!
