@@ -12,6 +12,48 @@
     "shared" : false
   },
   "intents" : [ {
+    "id" : 82071,
+    "path" : "/ВыделениеМесяца",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "выдели"
+    }, {
+      "text" : "выдели месяц"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "duckling.number",
+      "entity" : "duckling.number",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.ordinal",
+      "entity" : "duckling.ordinal",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.date",
+      "entity" : "duckling.date",
+      "required" : false,
+      "prompts" : [ ]
+    } ]
+  }, {
+    "id" : 81194,
+    "path" : "/ПереходКОтчету",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "открой отчет"
+    }, {
+      "text" : "перейди к отчету"
+    }, {
+      "text" : "открой график"
+    }, {
+      "text" : "покажи отчет"
+    } ],
+    "patterns" : [ ]
+  }, {
     "id" : 80582,
     "path" : "/ПереходНаСтраницу",
     "enabled" : true,
@@ -83,6 +125,17 @@
       "prompts" : [ ]
     } ]
   }, {
+    "id" : 81583,
+    "path" : "/СравнениеПоГодам",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "сравни по годам"
+    }, {
+      "text" : "сделай сравнение годов"
+    } ],
+    "patterns" : [ ]
+  }, {
     "id" : 80586,
     "path" : "/СравнениеПолугодия",
     "enabled" : true,
@@ -93,6 +146,8 @@
       "text" : "сравни половину года"
     }, {
       "text" : "сделай сравнение полугодия"
+    }, {
+      "text" : "покажи разницу между половиной года"
     } ],
     "patterns" : [ ],
     "slots" : [ {
@@ -106,15 +161,6 @@
       "required" : false,
       "prompts" : [ ]
     } ]
-  }, {
-    "id" : 80584,
-    "path" : "/ТестированиеГода",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "тестируй @duckling.date год"
-    } ],
-    "patterns" : [ ]
   } ],
   "entities" : [ ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.ordinal", "duckling.date" ]

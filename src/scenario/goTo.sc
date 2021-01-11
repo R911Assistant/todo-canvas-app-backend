@@ -1,11 +1,12 @@
 theme: /
 
     state: ПереходНа
-        q!: (~перейди|~перейти|открой) 
+        q!: (~перейти/~открыть) * [отчет|график]
             $AnyText::anyText
             
         script:
             goTo($parseTree._anyText, $context);
+        a:  Ок
         
         
     state: ПереходДальше
