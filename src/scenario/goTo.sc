@@ -6,7 +6,6 @@ theme: /
             
         script:
             goTo($parseTree._anyText, $context);
-        a:  Ок1
         
         
     state: ПереходДальше
@@ -14,7 +13,6 @@ theme: /
 
         script:
             goToNext($context);
-        a: Ладно
             
         go!: /ПереходимНаСледующуюСтраницу
         
@@ -24,17 +22,14 @@ theme: /
 
         script:
             goToBack($context);
-            
-        a: преды
         
         go!: /ПереходимНаПредыдущуюСтраницу
         
     state: ПереходКРазделу
-        q!: (~перейти/~открыть/~переход/~показать/показ*/покажи/отобраз*) [к] (раздел*/секци*) 
+        q!: (~перейти/~открыть/~переход/~показать/показ*/покажи/отобраз*/пролиста*) [к] [до] (раздел*/секци*) 
             $AnyText::anyText
             
         script:
             goToAnchor($parseTree._anyText, $context);
-        
-        a: ffff
+
         
