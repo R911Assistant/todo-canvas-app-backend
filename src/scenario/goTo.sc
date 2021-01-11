@@ -36,3 +36,5 @@ theme: /
         script:
             goToAnchor($parseTree._anyText, $context);
         
+        a: ffff
+        
