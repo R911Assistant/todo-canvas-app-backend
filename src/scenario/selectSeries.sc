@@ -1,15 +1,15 @@
 theme: /
 
     state: ВыделениеСерии
-        q!: (~выделить|выдели) (серию)
-            $AnyText::anyText
+        q!: {(выдел*/выбер*/выбор/выбра*) (сери*)
+            $AnyText::anyText}
             
         script:
             selectSeries($parseTree._anyText, $context);
         
         
     state: ВыделениеВсехСерий
-        q!: (~выделить|выдели) (все серии)
+        q!:  {(выдел*/выбер*/выбор/выбра*) (все* сери*)}
         
         script:
             selectAllSeries($context);
