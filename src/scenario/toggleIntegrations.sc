@@ -5,7 +5,6 @@ theme: /
         
         script:
             showNextIntegration($context);
-        a: ff
         
         go!: /ПоказываемСледующееВнедрение
         
@@ -15,6 +14,5 @@ theme: /
         
         script:
             showPrevIntegration($context);
-        a: vv
         
         go!: /ПоказываемПредыдущееВнедрение
