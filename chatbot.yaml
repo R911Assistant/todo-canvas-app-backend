@@ -1,4 +1,4 @@
-name: echo-template
+
 
 entryPoint:
   - main.sc
