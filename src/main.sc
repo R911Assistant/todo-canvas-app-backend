@@ -43,8 +43,6 @@ theme: /
             $repeat<$OpenKeyWords>
             [$repeat<$OpenSkipWords>] 
             $projectName
-            
-        a: Начнём!
 
 
     state: Fallback
