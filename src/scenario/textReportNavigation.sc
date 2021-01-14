@@ -5,6 +5,7 @@ theme: /
 
         script:
             moveToAnchor($parseTree._anyText, $context);
+        a: ddd
         
         go!: /ПереходимКРазделу
-        a: ddd
+        
