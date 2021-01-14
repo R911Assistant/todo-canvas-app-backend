@@ -1,7 +1,7 @@
 theme: /
 
     state: ПереходКРазделу
-        q!: (открой блок) $AnyText::anyText
+        q!: (открой б) $AnyText::anyText
 
         script:
             moveToAnchor($parseTree._anyText, $context);
