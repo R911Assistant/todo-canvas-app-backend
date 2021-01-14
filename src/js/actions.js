@@ -1,10 +1,3 @@
-function testYear(date, context) {
-    addAction({
-        type: "test_year",
-        date: date
-    }, context);
-}
-
 
 
 function goTo(place, context) {
