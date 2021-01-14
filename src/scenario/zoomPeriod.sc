@@ -12,5 +12,5 @@ theme: /
             }
             $Year = $parseTree.value;
             zoomYear($Year, $context);
-        a: $Year
+        a: {{$Year}}
         
