@@ -39,6 +39,39 @@
       "prompts" : [ ]
     } ]
   }, {
+    "id" : 82008,
+    "path" : "/МасштабированиеГода",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "увеличь год"
+    }, {
+      "text" : "приблизь год"
+    }, {
+      "text" : "масштабирование года"
+    }, {
+      "text" : "масштаб года"
+    }, {
+      "text" : "приближение года"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "duckling.ordinal",
+      "entity" : "duckling.ordinal",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.date",
+      "entity" : "duckling.date",
+      "required" : false,
+      "prompts" : [ ]
+    }, {
+      "name" : "duckling.number",
+      "entity" : "duckling.number",
+      "required" : false,
+      "prompts" : [ ]
+    } ]
+  }, {
     "id" : 80583,
     "path" : "/СравнениеКвартала",
     "enabled" : true,
