@@ -2,7 +2,7 @@ theme: /
 
     
     state: Отмена
-        q!: (~отменить|отмена) 
+        q!: (отмени*|отмена) *
         
         script:
             cancel($context);
