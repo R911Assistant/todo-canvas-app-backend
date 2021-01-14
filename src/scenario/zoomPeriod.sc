@@ -1,8 +1,7 @@
 theme: /
 
     state: МасштабированиеГода
-        intent!: 
-        q!: (приблиз*/увелич*/масштаб*) ($AnyText::anyText) [год*]
+        intent!: /МасштабированиеГода
             
         script: 
             var $Year;
