@@ -70,6 +70,13 @@ function compareMonth(month, context) {
     }, context);
 }
 
+function selectMonth(month, context) {
+    addAction({
+        type: "select_month",
+        month: month
+    }, context);
+}
+
 
 
 

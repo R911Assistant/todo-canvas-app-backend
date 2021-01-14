@@ -38,8 +38,6 @@ theme: /
             }
             compareQuarter($Quarter, $context);
 
-        
-        
     state: СравнениеМесяца
         intent!: /СравнениеМесяца
         script: 
@@ -50,6 +48,17 @@ theme: /
                 $Month = $parseTree.value - 1;
             }
             compareMonth($Month, $context);
+            
+    state: ВыделениеМесяца
+        intent!: /ВыделениеМесяца
+        script: 
+            var $Month;
+            if (typeof $parseTree.value === "object") {
+                $Month = $parseTree.value.month - 1;
+            } else {
+                $Month = $parseTree.value - 1;
+            }
+            selectMonth($Month, $context);
 
         
         
