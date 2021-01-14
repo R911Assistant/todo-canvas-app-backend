@@ -1,9 +1,10 @@
 theme: /
 
     state: ПереходКРазделу
-        q!: (отопри б) $AnyText::anyText
+        q!: (~перейти/откр*/~переход/~показать/показ*/покажи/*листа*) [к/до] (раздел*/блок*/блог*) ($AnyText::anyText)
 
         script:
             moveToAnchor($parseTree._anyText, $context);
         
         go!: /ПереходимКРазделу
+        a: ddd
