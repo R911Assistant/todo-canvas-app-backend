@@ -4,13 +4,6 @@ theme: /
         intent!: /МасштабированиеГода
             
         script: 
-            var $Year;
-            if (typeof $parseTree.value === "object") {
-                $Year = $parseTree.value.year;
-            } else {
-                $Year = $parseTree.value;
-            }
-            $Year = $parseTree.value;
-            zoomYear($Year, $context);
+            zoomYear($parseTree.value, $context);
         a: {{$parseTree.value}}
         
