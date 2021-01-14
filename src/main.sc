@@ -43,7 +43,6 @@ theme: /
             $repeat<$OpenKeyWords>
             [$repeat<$OpenSkipWords>] 
             $projectName
-        a: Голосовое управление активно. Нажмите на значок и произнесите команду
 
 
     state: Fallback
