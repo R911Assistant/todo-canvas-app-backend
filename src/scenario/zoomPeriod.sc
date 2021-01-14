@@ -1,9 +1,9 @@
 theme: /
 
     state: МасштабированиеГода
-        intent!: /МасштабированиеГода
+        q!:  (масштаб*/приблиз*/приближ*/увелич*/зум*) $AnyText::anyText (год*)
             
         script: 
-            zoomYear($parseTree.value, $context);
-        a: {{$parseTree.value}}
+            zoomYear($parseTree._anyText, $context);
+
         

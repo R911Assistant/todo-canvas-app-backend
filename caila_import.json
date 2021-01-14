@@ -44,27 +44,22 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "увеличь год"
+      "text" : "увеличь  две тысячи год"
     }, {
-      "text" : "приблизь год"
+      "text" : "приблизь 2000 год"
     }, {
-      "text" : "масштабирование года"
+      "text" : "масштабирование  две тысячи  года"
     }, {
-      "text" : "масштаб года"
+      "text" : "масштаб  две тысячи  года"
     }, {
-      "text" : "приближение года"
+      "text" : "приближение  две тысячи года"
     }, {
-      "text" : "масштабируй год"
+      "text" : "масштабируй две тысячи год"
     } ],
     "patterns" : [ ],
     "slots" : [ {
       "name" : "duckling.ordinal",
       "entity" : "duckling.ordinal",
-      "required" : false,
-      "prompts" : [ ]
-    }, {
-      "name" : "duckling.date",
-      "entity" : "duckling.date",
       "required" : false,
       "prompts" : [ ]
     }, {
@@ -159,5 +154,5 @@
     } ]
   } ],
   "entities" : [ ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.ordinal", "duckling.date" ]
+  "enabledSystemEntities" : [ "duckling.ordinal", "duckling.date", "duckling.number" ]
 }
