@@ -74,6 +74,12 @@ theme: /
         random:
             a: Сравниваю месяц
             
+    state: ВыделяемМесяц
+        event!: select_month
+        event!: SELECT_MONTH
+        random:
+            a: Выделяю месяц
+            
             
                        
     state: МасштабируемГод
