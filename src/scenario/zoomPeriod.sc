@@ -8,7 +8,8 @@ theme: /
             if (typeof $parseTree.value === "object") {
                 $Year = $parseTree.value.year;
             } else {
-                $Year = $parseTree;
+                $Year = $parseTree.value;
             }
+            $Year = $parseTree.value;
             zoomYear($Year, $context);
         
